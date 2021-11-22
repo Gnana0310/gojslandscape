@@ -1,0 +1,7 @@
+ <div class="left">
+    Diagram
+    <gojs-diagram #myDiagram [initDiagram]='initDiagram' [nodeDataArray]='diagramNodeData'
+      [linkDataArray]='diagramLinkData' [divClassName]='diagramDivClassName' [modelData]='diagramModelData'
+      [skipsDiagramUpdate]='skipsDiagramUpdate' (modelChange)='diagramModelChange($event)'>
+    </gojs-diagram>
+    </div>
