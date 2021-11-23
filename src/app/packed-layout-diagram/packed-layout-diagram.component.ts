@@ -7,9 +7,20 @@ import {
   ViewChild,
   OnInit
 } from '@angular/core';
-import * as go from 'gojs';
+/* initial called import */
+/* import * as go from 'gojs';
+ import { DataSyncService, DiagramComponent } from 'gojs-angular';
+ import { PackedLayout } from 'gojs/extensionsTS/PackedLayout'; */
+
+/* added for testing[23-11-2021] 
+ directly refered from node_modules extensionsJSM folder for packedLayout */
+import * as go from '../../../node_modules/gojs/release/go-module';
 import { DataSyncService, DiagramComponent } from 'gojs-angular';
-import { PackedLayout } from 'gojs/extensionsTS/PackedLayout';
+/* import { PackedLayout } from '../../../node_modules/gojs/extensionsJSM/PackedLayout';*/
+
+/* added for testing[23-11-2021] 
+ local import and refered */
+import { PackedLayout } from '../go-depandancy/PackedLayout';
 
 @Component({
   selector: 'app-packed-layout-diagram',
